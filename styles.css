@@ -43,7 +43,7 @@ body {
   margin: 0 auto;
 }
 
-#volver {
+#volver, #volver-banco {
   background-color: #388e3c; /* Botón verde */
   color: #fff;
   border: none;
@@ -53,7 +53,7 @@ body {
   margin-bottom: 1rem;
 }
 
-#volver:hover {
+#volver:hover, #volver-banco:hover {
   background-color: #2e7d32; /* Botón verde oscuro al pasar el mouse */
 }
 
@@ -89,4 +89,38 @@ body {
 
 .pregunta button:hover {
   background-color: #2e7d32; /* Botón verde oscuro al pasar el mouse */
+}
+
+/* Estilos para el banco de preguntas */
+#banco-preguntas {
+  padding: 2rem;
+  text-align: center;
+}
+
+#tarjetas-preguntas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.tarjeta {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: scale(1.05);
+}
+
+.respuesta {
+  display: none;
+  margin-top: 1rem;
+  font-style: italic;
+  color: #388e3c; /* Texto verde */
 }
